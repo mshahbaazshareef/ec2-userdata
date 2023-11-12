@@ -1,7 +1,7 @@
 sudo apt update
 sudo apt upgrade
-sudo apt install docker.io
-sudo systemctl start docker
+sudo apt install docker.io -y
+sudo systemctl start docker 
 sudo docker info
 sudo usermod -aG docker $USER
 cat <<EOF > $pwd/index.html
