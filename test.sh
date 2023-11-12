@@ -8,8 +8,8 @@ cat <<EOF > /home/ubuntu/index.html
 <!DOCTYPE html>
 <html>
 <head>
-<h1> Mohammed Shahbaaz Shareef </h1>
 <title>Welcome to nginx!</title>
+<h1> Mohammed Shahbaaz Shareef </h1>
 <style>
 html { color-scheme: light dark; }
 body { width: 35em; margin: 0 auto;
