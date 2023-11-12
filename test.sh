@@ -3,8 +3,8 @@ sudo apt-get install docker.io -y
 sudo systemctl start docker 
 sudo docker info
 sudo systemctl enable docker
-sudo usermod -a -G docker $(whoami)
-cat <<EOF > $pwd/index.html
+sudo usermod -aG docker $USER
+cat <<EOF > /home/ubuntu/index.html
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +30,7 @@ Commercial support is available at
 </body>
 </html>
 EOF
-cat <<EOF > $pwd/Dockerfile
+cat <<EOF > /home/ubuntu/Dockerfile
 From nginx
 ADD index.html /user/share/nginx/html
 EOF
