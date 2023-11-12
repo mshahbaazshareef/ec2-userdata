@@ -34,6 +34,6 @@ cat <<EOF > /home/ubuntu/Dockerfile
 From nginx
 ADD index.html /user/share/nginx/html
 EOF
-docker build . -t shahbaaz_nginx
-docker run -d -p 80:80 shahbaaz_nginx
-docker ps -a 
+sudo docker build . -t shahbaaz_nginx
+sudo docker run -d -p 80:80 shahbaaz_nginx
+sudo docker ps -a 
