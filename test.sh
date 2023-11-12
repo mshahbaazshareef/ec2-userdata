@@ -1,9 +1,9 @@
-sudo apt update
-sudo apt upgrade
-sudo apt install docker.io -y
+sudo apt-get update
+sudo apt-get install docker.io -y
 sudo systemctl start docker 
 sudo docker info
-sudo usermod -aG docker $USER
+sudo systemctl enable docker
+sudo usermod -a -G docker $(whoami)
 cat <<EOF > $pwd/index.html
 <!DOCTYPE html>
 <html>
